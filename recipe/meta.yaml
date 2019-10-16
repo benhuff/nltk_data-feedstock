@@ -8,10 +8,11 @@ package:
 source:
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
   sha256: 25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7
+  patches:
+    - propbank.patch  # [win]
 
 build:
   number: 0
-  noarch: generic
 
 requirements:
   build:
