@@ -1,0 +1,16 @@
+diff --git a/packages/corpora/propbank.xml b/packages/corpora/propbank.xml
+deleted file mode 100644
+index 871fc61..0000000
+--- a/packages/corpora/propbank.xml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<package id="propbank" name="Proposition Bank Corpus 1.0"
+-         contact="Martha Palmer"
+-         webpage="http://verbs.colorado.edu/~mpalmer/projects/ace.html"
+-         license="Distributed with permission"
+-         unzip="0"
+-         />
+diff --git a/packages/corpora/propbank.zip b/packages/corpora/propbank.zip
+deleted file mode 100644
+index 33f5e51..0000000
+Binary files a/packages/corpora/propbank.zip and /dev/null differ

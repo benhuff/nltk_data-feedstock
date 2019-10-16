@@ -8,6 +8,7 @@ package:
 source:
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
   sha256: 25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7
+  # this removes propbank.xml + propbank.zip from nltk_data. the file con.xml inside propbank.zip causes failure on windows
   patches:
     - propbank.patch  # [win]
 
