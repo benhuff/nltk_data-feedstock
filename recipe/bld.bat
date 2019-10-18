@@ -1,5 +1,4 @@
-mkdir %PREFIX%\lib\nltk_data
-7za l -r %SRC_DIR%\packages\*.zip
-
-MOVE %SRC_DIR%\packages %PREFIX%\lib\nltk_data
-FIND "*.zip" %PREFIX%\lib\nltk_data\packages -execdir 7za l -r
+set "PATH=%PREFIX%\lib\nltk_data;%PATH%"
+mkdir %PATH%
+move %SRC_DIR%\packages %PATH%
+7za l -r %PATH%
