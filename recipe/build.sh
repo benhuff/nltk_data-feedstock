@@ -8,8 +8,8 @@ mkdir -vp ${NLTK_DATA}
 mv ${SRC_DIR}/packages/* ${NLTK_DATA}
 
 # Check the platform to determine software to use for unzip
-echo "$OSTYPE"
-echo 7za --help
+$OSTYPE
+7za --help
 
 if [ "$OSTYPE" = "msys" ]; then
     find ${NLTK_DATA}/ -name "*.zip" -execdir 7za e -qq -o '{}' ';' -delete
