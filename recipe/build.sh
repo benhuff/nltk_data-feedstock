@@ -18,8 +18,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     find ${NLTK_DATA}/ -name '*.zip' -execdir unzip -qq -o '{}' ';'
     find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
 
-else
-    echo "Other"
-    bash -c "echo $OSTYPE"
-    find ${NLTK_DATA}/ -name '*.zip' -execdir 7za x '{}' ';'
 fi
