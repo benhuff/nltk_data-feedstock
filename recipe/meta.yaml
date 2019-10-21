@@ -14,7 +14,7 @@ build:
 
 requirements:
   build:
-    - unzip  # [linux]
+    - unzip  # [unix]
 
   run:
     - python
