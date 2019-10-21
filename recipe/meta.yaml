@@ -15,6 +15,7 @@ build:
 requirements:
   build:
     - unzip  # [unix]
+    - 7za  # [win]
 
   run:
     - python

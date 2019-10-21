@@ -21,6 +21,5 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 else
     echo "Other"
     bash -c "echo $OSTYPE"
-    find ${NLTK_DATA}/ -name '*.zip' ! -name '*propbank*.zip' -execdir unzip -qq -o '{}' ';'
-    find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
+    find ${NLTK_DATA}/ -name '*.zip' -execdir 7za x '{}' ';'
 fi
