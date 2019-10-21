@@ -19,7 +19,7 @@ elif [ "$OSTYPE" = darwin ]; then
     find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
 
 else
-    bash -c "Other"
+    echo "Other"
     bash -c "echo $OSTYPE"
     find ${NLTK_DATA}/ -name '*.zip' ! -name '*propbank*.zip' -execdir unzip -qq -o '{}' ';'
     find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
