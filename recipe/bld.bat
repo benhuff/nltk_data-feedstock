@@ -1,4 +1,4 @@
-set NLTK_DATA=%LIBRARY_LIB%\nltk_data
-md %NLTK_DATA%
-cd %NLTK_DATA%
-7z l -tzip *.zip -x!*.xml
+md %LIBRARY_LIB%\nltk_data
+cd %LIBRARY_LIB%\nltk_data
+
+7za l . *.zip -x!*.xml
