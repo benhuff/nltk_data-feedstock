@@ -1,1 +1,2 @@
-cmd /c "7za l -tzip %LIBRARY_LIB%\nltk_data *.zip -xr!*.xml"
+dir %SRC_DIR%
+cmd /c "7za l -tzip . *.zip -xr!*.xml"
