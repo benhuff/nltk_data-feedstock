@@ -13,4 +13,4 @@ cd %NLTK_DATA%
 echo "Printing out NLTK_DATA after SRC_DIR\packages\* has been moved..."
 dir %NLTK_DATA%
 
-7za l %PREFIX%\nltk_data *.zip -x!*.xml
+7za l %PREFIX%\nltk_data\packages *.zip -xr!*.xml
