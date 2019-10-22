@@ -1,11 +1,16 @@
-md %PREFIX%\nltk_data
+echo "Printing out LIBRARY_PREFIX..."
+dir %LIBRARY_PREFIX%
 
-dir %SRC_DIR%
+set NLTK_DATA=%LIBRARY_PREFIX%\lib\nltk_data
+mkdir "%NLTK_DATA%"
+
+echo "Printing out SRC_DIR\packages..."
 dir %SRC_DIR%\packages
 
-move "%SRC_DIR%\packages\*" "%PREFIX%\nltk_data"
-cd %PREFIX%\nltk_data
+move %SRC_DIR%\packages\* %NLTK_DATA%
+cd %NLTK_DATA%
 
-dir %PREFIX%\nltk_data
+echo "Printing out NLTK_DATA after SRC_DIR\packages\* has been moved..."
+dir %NLTK_DATA%
 
 7za l %PREFIX%\nltk_data *.zip -x!*.xml
