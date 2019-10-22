@@ -7,9 +7,5 @@ mkdir -vp ${NLTK_DATA}
 
 mv ${SRC_DIR}/packages/* ${NLTK_DATA}
 
-if [[ "$OSTYPE" == "msys"* ]]; then
-    find ${NLTK_DATA}/ -name "*.zip" -execdir 7za x -ao '{}' ';' -delete
-else
-    find ${NLTK_DATA}/ -name "*.zip" -execdir unzip -qq -o '{}' ';' -delete
-    find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
-fi
+find ${NLTK_DATA}/ -name "*.zip" -execdir unzip -qq -o '{}' ';' -delete
+find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
