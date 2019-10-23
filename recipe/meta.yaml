@@ -23,8 +23,8 @@ requirements:
 test:
   files:
     - run_test.py  # [unix]
-  imports:
-    - nltk.data
+  commands:
+    - if not exist %LIBRARY_LIB%\\nltk_data\\tokenizers\\punkt\\english.pickle exit 1  # [win]
 
 about:
   home: http://nltk.org/
