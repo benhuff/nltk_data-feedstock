@@ -21,8 +21,8 @@ requirements:
     - nltk >=3.4.4
 
 test:
-  requires:
-    - nltk >=3.4.4
+  source_files:
+    - %LIBRARY_LIB%\nltk_data
 
 about:
   home: http://nltk.org/
