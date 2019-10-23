@@ -21,6 +21,10 @@ requirements:
     - python
     - nltk >=3.4.4
 
+test:
+  imports:
+    - nltk_data
+
 about:
   home: http://nltk.org/
   license: Various
@@ -30,3 +34,4 @@ extra:
   recipe-maintainers:
     - danielfrg
     - quartox
+    - benhuff
