@@ -1,7 +1,8 @@
 set NLTK_DATA=%LIBRARY_PREFIX%\lib\nltk_data
 mkdir "%NLTK_DATA%"
 
-mv %SRC_DIR%\packages\* %NLTK_DATA%
+xcopy %SRC_DIR%\packages\* %NLTK_DATA%
+rmdir /S %SRC_DIR%\packages
 cd %NLTK_DATA%
 
 forfiles /s /m *.zip /c "cmd /c 7za x -tzip -r -y @file"
