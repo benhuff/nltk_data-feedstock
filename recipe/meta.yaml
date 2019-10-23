@@ -20,6 +20,12 @@ requirements:
     - python
     - nltk >=3.4.4
 
+test:
+  files:
+    - run_test.py  # [unix]
+  imports:
+    - nltk.data
+
 about:
   home: http://nltk.org/
   license: Various
