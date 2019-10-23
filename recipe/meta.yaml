@@ -21,10 +21,8 @@ requirements:
     - nltk >=3.4.4
 
 test:
-  files:
-    - run_test.py  # [unix]
-  commands:
-    - if not exist %LIBRARY_LIB%\\nltk_data\\tokenizers\\punkt\\english.pickle exit 1  # [win]
+  requires:
+    - nltk >=3.4.4
 
 about:
   home: http://nltk.org/
