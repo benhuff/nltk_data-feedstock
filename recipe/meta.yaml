@@ -21,10 +21,10 @@ requirements:
     - nltk >=3.4.4
 
 test:
-  files:
+  source_files:
     - run_test.py  # [unix]
   imports:
-    - nltk.data
+    - nltk.data  # [win]
 
 about:
   home: http://nltk.org/
