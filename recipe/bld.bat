@@ -1,4 +1,4 @@
-set NLTK_DATA=%LIBRARY_LIB%\nltk_data
+set NLTK_DATA=%PREFIX%\lib\nltk_data
 mkdir "%NLTK_DATA%"
 
 xcopy /s %SRC_DIR%\packages %NLTK_DATA%

@@ -7,5 +7,5 @@ mkdir -vp ${NLTK_DATA}
 
 mv ${SRC_DIR}/packages/* ${NLTK_DATA}
 
-find ${NLTK_DATA}/ -name "*.zip" -execdir unzip -q -o '{}' ';' -delete
+find ${NLTK_DATA}/ -name "*.zip" -execdir unzip -qq -o '{}' ';' -delete
 find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
