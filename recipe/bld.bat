@@ -6,5 +6,6 @@ cd %NLTK_DATA%
 
 forfiles /s /m *.zip /c "cmd /c 7za x -tzip -r -y @file"
 
+dir %NLTK_DATA%
 dir %NLTK_DATA%\tokenizers
 dir %NLTK_DATA%\tokenizers\punkt

@@ -9,3 +9,6 @@ mv ${SRC_DIR}/packages/* ${NLTK_DATA}
 
 find ${NLTK_DATA}/ -name "*.zip" -execdir unzip -qq -o '{}' ';' -delete
 find ${NLTK_DATA}/ -name "*.gz" -exec gunzip '{}' ';'
+
+cd ${NLTK_DATA}
+ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
